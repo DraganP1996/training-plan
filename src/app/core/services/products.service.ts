@@ -1,7 +1,7 @@
 import { Injectable, Inject, InjectionToken } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable, BehaviorSubject } from "rxjs";
-import { Product } from "./models/product.model";
+import { Product } from "../../models/product.model";
 
 
 export const REST_URL = new InjectionToken("rest_url");

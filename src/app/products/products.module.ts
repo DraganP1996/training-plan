@@ -4,13 +4,11 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-//import { CoreModule } from '@core';
-import { SharedModule } from '@shared';
+import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '@app/material.module';
 import { ProductsRoutingModule } from './products-routing.module';
-//import { HomeComponent } from './home.component';
-//import { QuoteService } from './quote.service';
-import { ProductListComponent } from './product-list.component';
+import { MockListComponent} from './product-mock-list/mock-list.component';
+import { ProductListComponent } from './product-list/product-list.component';
 import { FilterArrayPipe } from '../filterTableArray.pipe';
 
 @NgModule({
@@ -22,8 +20,8 @@ import { FilterArrayPipe } from '../filterTableArray.pipe';
     FlexLayoutModule,
     MaterialModule,
     ProductsRoutingModule,
-    FormsModule
+    FormsModule,
   ],
-  declarations: [ProductListComponent,FilterArrayPipe],
+  declarations: [MockListComponent, ProductListComponent, FilterArrayPipe],
 })
 export class ProductsModule {}

@@ -4,7 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 //import { CoreModule } from '@core';
-import { SharedModule } from '@shared';
+import { SharedModule } from '@app/shared';
 import { MaterialModule } from '@app/material.module';
 import { AdministrationRoutingModule } from './administration-routing.module';
 import { FormsModule } from '@angular/forms';

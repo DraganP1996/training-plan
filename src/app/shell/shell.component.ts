@@ -3,7 +3,7 @@ import { MediaChange, MediaObserver } from '@angular/flex-layout';
 import { MatSidenav } from '@angular/material/sidenav';
 import { filter } from 'rxjs/operators';
 
-import { untilDestroyed } from '@core';
+import { untilDestroyed } from '@app/core';
 
 @Component({
   selector: 'app-shell',

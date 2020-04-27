@@ -1,11 +1,11 @@
 import { Component, OnInit, Inject } from '@angular/core';
 
-import { ProductsService } from '../products.service';
+import { ProductsService } from '../core/services/products.service';
 import { Product } from '../models/product.model';
 import { Router } from '@angular/router';
 
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import { NotificationService } from '../notification.service';
+import { NotificationService } from '../core/services/notification.service';
 
 
 @Component({

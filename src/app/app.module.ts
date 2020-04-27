@@ -6,8 +6,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 
-import { CoreModule } from '@core';
-import { SharedModule } from '@shared';
+import { CoreModule } from '@app/core';
+import { SharedModule } from '@app/shared';
 import { AuthModule } from '@app/auth';
 import { HomeModule } from './home/home.module';
 import { ShellModule } from './shell/shell.module';
@@ -18,7 +18,7 @@ import { NotifierModule } from "angular-notifier";
 
 //import { ProductsModule } from './products/products.module';
 // Changed in the 9 exercise --- import { DataService } from './products/data.service'; 
-import { ProductsService, REST_URL } from "./products.service";
+import { ProductsService, REST_URL } from "./core/services/products.service";
 
 
 

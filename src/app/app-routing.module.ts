@@ -3,8 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   // Fallback when no prior route is matched
-  { path: 'product', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)},
-  { path: 'admin', loadChildren: () => import('./administration/administration.module').then(m => m.AdministrationModule)},
+  { path: 'products', loadChildren: () => import('./products/products.module').then((m) => m.ProductsModule) },
+  {
+    path: 'admin',
+    loadChildren: () => import('./administration/administration.module').then((m) => m.AdministrationModule),
+  },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 

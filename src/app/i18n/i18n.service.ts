@@ -44,8 +44,9 @@ export class I18nService {
    * @param supportedLanguages The list of supported languages.
    */
   init(defaultLanguage: string, supportedLanguages: string[]) {
+    console.log('**********************'+supportedLanguages);
     this.defaultLanguage = defaultLanguage;
-    this.supportedLanguages = supportedLanguages;
+    this.supportedLanguages = ['fr-FR','en-US','de-DE','zh-CH'];
     this.language = '';
 
     // Warning: this subscription will always be alive for the app's lifetime

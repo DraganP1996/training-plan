@@ -5,12 +5,12 @@
         <table class="table table-striped table-bordered text-center">
           <thead class="thead-dark">
             <tr>
-              <th translate>ID</th>
-              <th translate>TITLE</th>
-              <th translate>DESCRIPTION</th>
-              <th translate>PRICE</th>
-              <th translate>IMAGE URL</th>
-              <th translate>QUANTITY</th>
+              <th [translate]="'id'">ID</th>
+              <th [translate]="'title'">TITLE</th>
+              <th [translate]="'description'">DESCRIPTION</th>
+              <th [translate]="'price'">PRICE</th>
+              <th [translate]="'imageUrl'">IMAGE URL</th>
+              <th [translate]="'quantity'">QUANTITY</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -23,14 +23,14 @@
               <td><img src="{{ product.image }}" /></td>
               <td>{{ product.quantity }}</td>
               <td>
-                <button class="btn btn-sm btn-outline-primary" (click)="editProduct(product.id)" translate>Edit</button>
-                <button class="btn btn-sm btn-outline-danger" (click)="openDialog(product)" translate>Delete</button>
+                <button class="btn btn-sm btn-outline-primary" (click)="editProduct(product.id)" [translate]="'edit'">Edit</button>
+                <button class="btn btn-sm btn-outline-danger" (click)="openDialog(product)" [translate]="'delete'">Delete</button>
               </td>
             </tr>
           </tbody>
         </table>
         <div class="col-12 text-center">
-          <button class="btn btn-lg btn-success" (click)="changeRoute()" translate>CREATE</button>
+          <button class="btn btn-lg btn-success" (click)="changeRoute()" [translate]="'create'">CREATE</button>
         </div>
       </div>
     </div>

@@ -1,19 +1,19 @@
 <mat-toolbar class="mat-elevation-z6 navbar" color="primary">
   <div fxHide.gt-sm fxLayoutAlign="start center">
     <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">
-      <mat-icon>menu</mat-icon>
+      <mat-icon  [translate]="'menu'">menu</mat-icon>
     </button>
     <span class="title">{{ title }}</span>
   </div>
   <div fxHide.lt-md>
-    <a class="brand" href="https://github.com/ngx-rocket" translate>APP_NAME</a>
+    <a class="brand" href="https://github.com/ngx-rocket" [translate]="'app_name'">APP_NAME</a>
     <button mat-button routerLink="/home" routerLinkActive="active">
       <mat-icon>home</mat-icon>
-      <span translate>Home</span>
+      <span  [translate]="'home'">Home</span>
     </button>
     <button mat-button routerLink="/about" routerLinkActive="active">
       <mat-icon>info</mat-icon>
-      <span translate>About</span>
+      <span  [translate]="'about'">About</span>
     </button>
   </div>
   <span fxFlex></span>
@@ -24,10 +24,10 @@
   <mat-menu #userMenu="matMenu">
     <mat-list>
       <mat-list-item>
-        <span translate>Logged in as</span>&nbsp;<b>{{ username }}</b>
+        <span [translate]="'LoggedInAs'">Logged in as</span>&nbsp;<b>{{ username }}</b>
       </mat-list-item>
       <mat-divider></mat-divider>
     </mat-list>
-    <button mat-menu-item (click)="logout()" translate>Logout</button>
+    <button mat-menu-item (click)="logout()" [translate]="'logout'">Logout</button>
   </mat-menu>
 </mat-toolbar>

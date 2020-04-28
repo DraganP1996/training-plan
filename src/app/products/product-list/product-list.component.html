@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="display-3 text-center" translate>Product List</h1>
-        <p class="text-center"><small translate>***If the input is empty, the table will display all the products</small></p>
+        <h1 class="display-3 text-center" [translate]="'productList'">Product List</h1>
+        <p class="text-center"><small [translate]="'infoSearch'">***If the input is empty, the table will display all the products</small></p>
         <input
           type="text"
           placeholder="Insert the product name"
@@ -14,11 +14,11 @@
           <thead class="thead-dark">
             <tr>
               <th scope="col">ID</th>
-              <th scope="col" translate>TITLE</th>
-              <th scope="col" translate>DESCRIPTION</th>
-              <th scope="col" translate>PRICE</th>
-              <th scope="col" translate>IMAGE URL</th>
-              <th scope="col" translate>QUANTITY</th>
+              <th scope="col" [translate]="'title'">TITLE</th>
+              <th scope="col" [translate]="'description'">DESCRIPTION</th>
+              <th scope="col" [translate]="'price'">PRICE</th>
+              <th scope="col" [translate]="'imageUrl'">IMAGE URL</th>
+              <th scope="col" [translate]="'quantity'">QUANTITY</th>
             </tr>
           </thead>
           <tbody>

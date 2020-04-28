@@ -1,6 +1,6 @@
 {
-  "": "mera",
-  "": "A propos",
+  "app_name": "mera",
+  "about": "A propos",
   "helloWorld": "Bonjour le monde !",
   "home": "Accueil",
   "loggedInAs": "Connecté en tant que",
@@ -29,7 +29,6 @@
   "productDescription":"Description du produit",
   "productPrice":"Prix ​​du produit",
   "productImage":"Image produit",
-  "productQuantity":"Produktmenge",
   "productQuantity":"La quantité de produit",
   "save":"Sauvegarder"
 }

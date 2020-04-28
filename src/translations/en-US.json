@@ -29,8 +29,6 @@
   "productDescription":"Product description",
   "productPrice":"Product price",
   "productImage":"Product image",
-  "productQuantity":"Produktmenge",
   "productQuantity":"Product quantity",
   "save":"Save"
-
 }

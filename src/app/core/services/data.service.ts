@@ -13,7 +13,7 @@ export class DataService {
     this.products = new Array();
     for(let i = 0; i < 10; i++)
     {
-      this.products.push(new Product(i,'Title product'+i,'Description of the product'+i,i*10,'Image of the product'+i,(i*10).toString()))
+      this.products.push(new Product(i,'title product'+i,'Description of the product'+i,i*10,'Image of the product'+i,(i*10).toString()))
     }
   }
 

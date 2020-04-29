@@ -3,16 +3,16 @@
     <button  class="close" (click)="closeDialog()"><span aria-hidden="true">&times;</span></button>
   </div>
   <div class="modal-body" mat-dialog-content>
-    <h1 mat-dialog-title>Product title {{product.title}}</h1>
+    <h1 mat-dialog-title> {{product.title}}</h1>
     <div class="row">
       <div class="col-6">
         <img src="{{product.image}}" />
       </div>
       <div class="col-6">
-        <p>Product Description {{product.description}}</p>
+        <p> {{product.description}}</p>
         <ul>
-          <li>Price: {{ product.price  }}</li>
-          <li>Quantity:  {{ product.quantity }}</li>
+          <li><span [translate]="'price'">Price</span>: {{ product.price  }}</li>
+          <li><span [translate]="'quantity'">Quantity</span>:  {{ product.quantity }}</li>
         </ul>
       </div>        
     </div>

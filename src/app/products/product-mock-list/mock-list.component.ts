@@ -9,6 +9,7 @@ import { Product } from '../../models/product.model';
 })
 export class MockListComponent {
     products: Product[];
+    searchTerm: string;
     constructor(public dataService: DataService){
         this.products = new Array();
         this.dataService.getProducts().subscribe(p => this.products.push(p));

@@ -30,5 +30,6 @@
   "productPrice":"Prix ​​du produit",
   "productImage":"Image produit",
   "productQuantity":"La quantité de produit",
-  "save":"Sauvegarder"
+  "save":"Sauvegarder",
+  "insertTheProductName":"Insérez le nom du produit"
 }

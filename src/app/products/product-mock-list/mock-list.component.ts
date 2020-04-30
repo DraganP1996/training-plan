@@ -11,7 +11,8 @@ import { ProductDialog } from '../product-list/product-list.component';
 })
 export class MockListComponent {
     products: Product[];
-    constructor(public dataService: DataService, private matDialog: MatDialog){
+    searchTerm: string;
+    constructor(public dataService: DataService, public matDialog: MatDialog){
         this.products = new Array();
         this.dataService.getProducts().subscribe(p => this.products.push(p));
     }

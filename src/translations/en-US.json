@@ -31,5 +31,6 @@
   "productImage":"Product image",
   "productQuantity":"Product quantity",
   "save":"Save",
-  "insertTheProductName":"Insert the product name"
+  "insertTheProductName":"Insert the product name",
+  "productMockList":"Products Mock List"
 }

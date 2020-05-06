@@ -31,5 +31,6 @@
   "productImage":"Image produit",
   "productQuantity":"La quantité de produit",
   "save":"Sauvegarder",
-  "insertTheProductName":"Insérez le nom du produit"
+  "insertTheProductName":"Insérez le nom du produit",
+  "productMockList":"Liste des produits simulés"
 }
